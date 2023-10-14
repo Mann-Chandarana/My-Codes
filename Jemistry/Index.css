@@ -1,0 +1,52 @@
+body    
+{
+    background-image: url('Background-4.webp');
+    background-repeat: no-repeat; 
+    background-size: 118%;
+}
+
+hr.class-5 
+{
+    background-color: black;
+    border-top: 2px inert black;
+    border-width: 8px;
+}
+
+fieldset
+{
+    background-color: white;
+    padding-top: 1rem;
+    margin-left: 23rem;
+    margin-right: 28rem;
+    margin-top: 1rem;
+}
+.Heading
+{   
+    background-color: #6ef2c4;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+}
+
+.content
+{
+    margin-right: 5rem;
+    margin-left: 6rem;
+    margin-top: -1rem;
+    padding: 3rem;
+}
+
+label
+{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-right: 14px;
+}
+
+form
+{
+    border: 2px dotted black;
+    border-top-style: dotted;
+    border-width: 5px;
+}

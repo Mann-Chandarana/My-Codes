@@ -1,0 +1,4 @@
+Questions:
+
+1) Construct a BT from Inorder/PreOrder traversal: https://practice.geeksforgeeks.org/problems/construct-tree-1/1/#
+2) Construct a BT from PreOrder/PostOrder traversal: https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1/#

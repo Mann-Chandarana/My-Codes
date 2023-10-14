@@ -1,0 +1,9 @@
+Questions:
+
+1) Smallest range in a k sorted list: https://www.codingninjas.com/codestudio/problems/smallest-range-from-k-sorted-list_1069356?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+2) Mediam in a stream: https://www.codingninjas.com/codestudio/problems/median-in-a-stream_975268?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+    - Most important question
+    - Explanation given in the notes
+3) re-organise string: https://www.codingninjas.com/codestudio/problems/rearrange-string_982765?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+
+

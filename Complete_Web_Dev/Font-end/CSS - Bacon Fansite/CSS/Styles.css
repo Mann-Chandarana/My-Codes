@@ -1,0 +1,37 @@
+/**************************** Tag Seletor**********************************/
+h1
+{
+  color:red;
+  font-size: 50px
+}
+
+body
+{
+  background-color: green;
+}
+
+/* img
+{
+  background-color: red;
+} */
+img:hover
+{
+  background-color: gold;
+}
+/**************************** Class Seletor**********************************/
+.bacon
+{
+  background-color: green;
+}
+.brocooli
+{
+  background-color: red;
+}
+.circuar{
+  border-radius: 100%;
+}
+/**************************** ID Seletor**********************************/
+#Heading
+{
+  color: blue;
+}

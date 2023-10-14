@@ -1,0 +1,41 @@
+// getter and setter 
+
+class Animal {
+
+    constructor(name) {
+        this._name = name;
+    }
+
+    fly() {
+        console.log("Me udh raha tha");
+    }
+
+    get name()
+    {
+        return this._name;
+    }
+
+    set name(Name)
+    {
+        this._name = Name;
+    }
+}
+
+class Rabbit extends Animal{
+    eatCarrot()
+    {
+        console.log("Eating a carrot");
+    }
+}
+
+// let a = new Animal("Bruno")
+let a = new Rabbit("Bruno")
+a.fly();
+console.log(a.name)
+a.name= "Jack"
+console.log(a.name)
+let c = 56;
+
+console.log(a instanceof Animal)
+console.log(a instanceof Rabbit)
+console.log(c instanceof Animal)

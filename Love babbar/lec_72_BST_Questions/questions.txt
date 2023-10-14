@@ -1,0 +1,108 @@
+Questions:
+
+1) Merge two BSTs: https://www.codingninjas.com/codestudio/problems/h_920474?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+	1.1) Convert sorted linked list to balanced BST: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/submissions/
+Approach 1: O(M + N)
+- Get inorder of both BSTs (inorder is sorted)
+- Merge these to sorted arrays (into arr3)
+- Create a BST from arr3
+
+Approach 2: O(h1 + h2)
+- Convert these two BST into sorted Linked List (Flatten a BST) TC: O(N) and SC: O(H)
+- Merge these two sorted Linked Lists (Interesting)
+
+/*
+
+void flattenBST(TreeNode<int> *root, TreeNode<int> *&prev)
+{
+	if(!root)
+		return;
+	
+	flattenBST(root->left, prev);
+	prev->left = NULL;
+	prev->right = root;
+	prev = root;
+	flattenBST(root->right, prev);
+}
+
+TreeNode<int>* mergeTwoLL(TreeNode<int> *root1, TreeNode<int> *root2)
+{
+	TreeNode<int> *temp1 = root1, *temp2 = root2;
+	TreeNode<int> *newRoot;
+	if(temp1->data <= temp2->data)
+	{
+		newRoot = new TreeNode<int> (temp1->data);
+		temp1 = temp1->right;
+	}
+	else
+	{
+		newRoot = new TreeNode<int> (temp2->data);
+		temp2 = temp2->right;
+	}
+	TreeNode<int> *temp = newRoot;
+	while(temp1 and temp2)
+	{
+		if(temp1->data <= temp2->data)
+		{
+			temp->left = NULL;
+			temp->right = temp1;
+			temp1 = temp1->right;
+			temp = temp->right;
+		}
+		else
+		{
+			temp->left = NULL;
+			temp->right = temp2;
+			temp2 = temp2->right;
+			temp = temp->right;
+		}
+	}
+	if(temp1)
+	{
+		temp->right = temp1;
+	}
+	if(temp2)
+	{
+		temp->right = temp2;
+	}
+	
+	return newRoot;
+}
+
+TreeNode<int> *mergeBST(TreeNode<int> *root1, TreeNode<int> *root2)
+{
+	// Approach 2: O(h1 + h2)
+	// - Convert these two BST into sorted Linked List (Flatten a BST) TC: O(N) and SC: O(H)
+	// - Merge these two sorted Linked Lists
+	
+	// Step 1: Flatten a BST
+	
+	TreeNode<int> *dummy1 = new TreeNode<int>(-1), *dummy2 = new TreeNode<int>(-1);
+	TreeNode<int> *prev1 = dummy1, *prev2 = dummy2;
+	
+	flattenBST(root1, prev1);
+	flattenBST(root2, prev2);
+	
+	prev1->left = prev1->right = NULL;
+	prev2->left = prev2->right = NULL;
+	
+	root1 = dummy1->right;
+	root2 = dummy2->right;
+	
+	// Step 2: Merge two sorted linked lists
+	TreeNode<int> *newRoot = mergeTwoLL(root1, root2);
+	
+	while(newRoot)
+	{
+		cout << newRoot->data << " ";
+		newRoot = newRoot->right;
+	}
+	cout << endl;
+	
+	// Step 3: BST ffrom sorted LL
+	
+	
+	return NULL;
+}
+
+*/

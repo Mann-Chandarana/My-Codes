@@ -1,0 +1,88 @@
+/* ///////// media-1/////////// */
+
+@media only screen and (min-width:1273px) and (max-width:1522px) {
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        top: 0.938rem;
+        right: 2rem;
+        margin-top: 15px;
+    }
+    
+    .vl{
+        display: none;
+    }
+    .items input {
+        width: 10rem;
+        margin-left: 0px;
+    }
+    .items a{
+        display: none;
+    }
+    #Form {
+        width: 645px;
+        margin: 30px auto;
+    }
+    #navbar-list
+    {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1273px) {
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        top: 0.938rem;
+        right: 2rem;
+        margin-top: 15px;
+    }
+    
+    #Form {
+        width: 545px;
+        margin: 30px auto;
+    }
+
+    @media only screen and (min-width:801px) and (max-width:950px)
+    {
+        #Footer .footer
+        {
+            margin-top: 13rem;
+        }
+    }
+    @media only screen and (max-width:801px)
+    {
+        #Footer
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+        #Footer.footer
+        {
+            margin-top: 0rem;
+        }
+        
+    }
+    @media only screen and (max-width:650px)
+    {
+        #Form 
+        {
+            width: 345px;
+            margin: 30px auto;
+        }
+        .but
+        {
+            width: 200px;
+        }
+    }
+
+
+}

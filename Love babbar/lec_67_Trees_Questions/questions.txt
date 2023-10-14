@@ -1,0 +1,3 @@
+Questions:
+
+1) Minimum Time to burn a tree: https://practice.geeksforgeeks.org/problems/burning-tree/1

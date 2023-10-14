@@ -1,0 +1,2 @@
+module First.Java.Program {
+}

@@ -1,0 +1,179 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Kareer_Studios",
+    "dateExported": "2023-02-10T08:41:21.368Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "aa2c3aa8-a26e-4924-b953-8cfe9bbe0257",
+            "name": "Signup_Student",
+            "containerId": "",
+            "created": "2023-02-04T16:40:18.256Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "99ad5246-03ad-4e07-a268-45b60bd48734",
+            "name": "Payment",
+            "containerId": "",
+            "created": "2023-02-08T09:39:51.627Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "727a4399-9bb3-43fb-a097-a61b2534d080",
+            "name": "Signup_All",
+            "containerId": "",
+            "created": "2023-02-08T09:40:12.719Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5b3dc3e5-19fe-41d6-905c-c815c1b0836e",
+            "colId": "25a0bb4a-a8ad-4d1c-8da4-f7276d8d3766",
+            "containerId": "727a4399-9bb3-43fb-a097-a61b2534d080",
+            "name": "Signup",
+            "url": "localhost:8000/api/auth/createUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-01T19:36:41.284Z",
+            "modified": "2023-02-08T10:46:47.949Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"rameshghoghari@gmail.com\",\n  \"password\":\"test123\",\n  \"role\":\"parent\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "484bfa0c-242e-465a-835a-e94898541ba1",
+            "colId": "25a0bb4a-a8ad-4d1c-8da4-f7276d8d3766",
+            "containerId": "99ad5246-03ad-4e07-a268-45b60bd48734",
+            "name": "Payement",
+            "url": "localhost:8000/api/payment/razorpay",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-04T09:53:24.174Z",
+            "modified": "2023-02-08T09:40:00.134Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"amount\":\"200\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bcc4a7eb-2d59-43d1-963b-8c7b1d38273e",
+            "colId": "25a0bb4a-a8ad-4d1c-8da4-f7276d8d3766",
+            "containerId": "aa2c3aa8-a26e-4924-b953-8cfe9bbe0257",
+            "name": "generateLink",
+            "url": "localhost:8000/api/link/generate",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-02-04T16:32:01.384Z",
+            "modified": "2023-02-08T09:45:44.853Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "92dada95-1ce7-470e-a916-8b36621984e0",
+            "colId": "25a0bb4a-a8ad-4d1c-8da4-f7276d8d3766",
+            "containerId": "aa2c3aa8-a26e-4924-b953-8cfe9bbe0257",
+            "name": "OTP",
+            "url": "localhost:8000/api/otp/send",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-02-04T16:35:06.271Z",
+            "modified": "2023-02-08T10:40:55.914Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"vghoghari82@gmail.com\",\n  \"phoneNumber\":\"7203088769\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "80583632-8e42-4413-9b36-7f2c1d2e7ca3",
+            "colId": "25a0bb4a-a8ad-4d1c-8da4-f7276d8d3766",
+            "containerId": "727a4399-9bb3-43fb-a097-a61b2534d080",
+            "name": "Login",
+            "url": "localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-01T19:41:08.314Z",
+            "modified": "2023-02-08T10:47:35.847Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"rameshghoghari@gmail.com\",\n  \"password\":\"test123\",\n  \"role\":\"parent\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "85cd254e-d757-4dbf-b5b0-45e3f1758088",
+            "colId": "25a0bb4a-a8ad-4d1c-8da4-f7276d8d3766",
+            "containerId": "99ad5246-03ad-4e07-a268-45b60bd48734",
+            "name": "Payement_veri",
+            "url": "https://6c49-2409-4041-6e99-9666-385f-bbf8-bb41-dbbc.in.ngrok.io/verification",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-04T14:48:44.388Z",
+            "modified": "2023-02-08T09:40:01.916Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b43addbc-181d-4e67-9148-b32acc4fa366",
+            "colId": "25a0bb4a-a8ad-4d1c-8da4-f7276d8d3766",
+            "containerId": "aa2c3aa8-a26e-4924-b953-8cfe9bbe0257",
+            "name": "Register",
+            "url": "localhost:8000/api/link/register/%7B%22ct%22%3A%22oFtsZ%2FCiXUnmwZXjVcaCNg%3D%3D%22%2C%22iv%22%3A%22da02b5c4ee5002f23e39b34e67e54c03%22%2C%22s%22%3A%2217ab894198f0e25d%22%7D",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-04T16:33:13.313Z",
+            "modified": "2023-02-08T10:41:39.165Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"vghoghari82@gmail.com\",\n  \"name\":\"Vatsal\",\n  \"phone\":\"7203088769\",\n  \"mobileOtp\":\"7882\",\n  \"emailOtp\":\"4500\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

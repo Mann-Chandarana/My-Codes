@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Job Application</title>
+    <Style>
+       
+        .bty {
+            color: #444;
+            line-height: 1em;
+            color: inherit;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1em;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 0 0 #444 inset, 0.3em 0.2em 0 0 #bbb;
+            border: 0.2em solid #444;
+            padding: 0.8em;
+            text-align: center;
+            transition: 0.25s box-shadow, 0.25s transform;
+        }
+
+        .bty-small {
+            padding: 0.7em;
+        }
+
+        .bty:hover {
+            box-shadow: 0 4em 0 0 #444 inset, 0em 0em 0 0 rgb(255, 255, 255);
+            transform: translate(0.4em, 0.3em);
+            color: rgb(255, 255, 255);
+        }
+    </Style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend style="font-size: xx-large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <b>Job Application Form</b>
+            </legend>
+            <b>please complete the form below to apply for th eposition with us</b>
+            <br><br>
+            <form>
+                <!--name-->
+                <label> Name:</label>
+                <div class="name" style="margin-top: -15px;margin-left: 150px;">
+                    <input type="text" placeholder="first name" required>
+                    <input type="text" placeholder="middle name" required>
+                    <input type="text" placeholder="last name" required>
+                    <br>
+                </div>
+                <!--address-->
+                <label>Cuurent Address</label>
+                <input type="text" placeholder="Street adress" style="margin-left:40px ;margin-top: 20px; width: 530px;"
+                    required><br>
+                <input type="text" placeholder="Street adress line 2"
+                    style="margin-left:150px; margin-top:15px; width:530px;"><br>
+                <input type="text" placeholder="City " style="margin-left:150px; margin-top:15px; width:250px;"
+                    required>
+                <input type="text" placeholder="State/Province" style="width: 270px;"><br>
+                <input type="text" placeholder="Zip Code" style="margin-top:15px; margin-left:150px; width:250px;"
+                    required><br>
+                <div style="margin-top: -20px;margin-left:415px;" required>
+                    <select name="country"  required>
+                        <option>select....</option>
+                        <option>India</option>
+                        <option>Uninted States Of America</option>
+                        <option>United Kingdom</option>
+                        <option>Sri lanka</option>
+                        <option>bangladesh</option>
+                        <option>Nepal</option>
+                        <option>bhutan</option>
+                    </select>
+                </div>
+                <!-- email-->
+                <div>
+                    <label>Email </label>
+                    <input type="email" placeholder="ex: myname@emample.com"
+                        style="margin-top: 15px;margin-left: 108px; width: 250px;" required>
+                </div>
+                <!-- Phone Number-->
+                <div>
+                    <label>Phone Number</label>
+                    <input type="number" style="width:80px;margin-top: 15px;margin-left: 50px;" placeholder="Area Code"
+                        required>
+                    
+                    <input type="number" name="contact" placeholder="contact number" style="width:150px;" required>
+                </div>
+                <div style="margin-top:15px;">
+                    <label for="designation">Applying For</label>
+                    <select name="designation" style="margin-left: 60px; width:260px;">
+                        <option>select.....</option>
+                        <option>Manager</option>
+                        <option>Ass.Manager</option>
+                        <option>receptionist</option>
+                        <option>peon</option>
+                        <option>Bell Boy</option>
+                    </select>
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="sartdate">Starting Date</label>
+                    <input type="date" style="margin-left:62px;">
+                </div>
+                <div style="margin-top: 30px;">
+                    <label for="resume">Upload Your <br>Resume</label>
+                    <input type="file" style="margin-left: 90px;">
+                </div>
+                <div style="margin-top: 30px;margin-left:-15px;">
+                    <input type="submit" class="bty">
+                </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

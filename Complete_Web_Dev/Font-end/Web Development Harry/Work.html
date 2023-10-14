@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: green;
+        }
+        .Containeer
+        {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+        .item
+        {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+        nav
+        {
+            grid-area: navbar;
+        }
+        section
+        {
+            grid-area: section;
+        }
+        aside
+        {
+            grid-area: aside;
+        }
+        footer
+        {
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="Containeer">
+        <nav class="item">
+            <span>Home</span>
+            <span>Contact</span>
+            <span>about</span>
+            <span>Services</span>
+        </nav>
+        <section class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nemo cupiditate distinctio et
+                expedita. Delectus quaerat accusamus inventore tenetur error quam minus, provident fugit repellat
+                necessitatibus? Architecto itaque quidem sequi blanditiis, facere accusantium hic.lorem122 Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Eligendi dignissimos ut rerum aut. Fuga delectus suscipit
+                debitis libero. Itaque, ipsum dignissimos consequatur repellat distinctio enim dolorem, facilis esse
+                dolorum illum earum aliquid numquam blanditiis ipsam reiciendis iure nobis quo cum maiores aperiam
+                pariatur. Quas aliquam, quae non rerum, architecto eligendi blanditiis officia placeat dolor soluta
+                explicabo. Voluptatem tenetur perspiciatis neque quidem ducimus velit id explicabo, illo magni quis
+                voluptatum. Tempora quod, dicta illum ratione quo at dolores cupiditate aperiam laboriosam amet sequi
+                quaerat similique incidunt eius deleniti deserunt accusamus eligendi nemo est veritatis fugiat ducimus!
+                Modi ut vel et nihil asperiores mollitia obcaecati, neque accusantium corrupti, quisquam voluptatem rem?
+                Possimus tempore et fugit cumque culpa aliquam doloremque odio hic, cum, minima nostrum!
+        </section>
+        <aside class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam voluptas iste quod ipsa aspernatur
+            delectus quaerat doloremque, perspiciatis eos ratione, ab eaque odio. Saepe explicabo iure sit iste quia,
+            dolores consequuntur eius similique ad ipsum amet adipisci quisquam doloribus est suscipit illo aliquid
+            ipsa. Ipsam voluptatem veniam dignissimos similique vero modi minima laudantium magni incidunt.
+        </aside>
+        <footer class="item">
+            @Copyright Mann Chandarana
+        </footer>
+    </div>
+</body>
+
+</html>

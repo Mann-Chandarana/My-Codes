@@ -1,0 +1,173 @@
+@media only screen and (max-width:1522px) {
+    .items {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        top: 0.938rem;
+        right: 2rem;
+        margin-top: 15px;
+    }
+    /* #aside
+    {
+        display: none;
+    } */
+}
+
+@media only screen and (max-width:1456px) {
+    #aside {
+        margin-left: -10rem;
+    }
+    .que {
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width:1372px) {
+    .que {
+        margin-left: 5rem;
+    }
+    #aside {
+        margin-left: -15rem;
+    }
+}
+
+@media only screen and (max-width:1293px) {
+    .que {
+        width: 65%;
+    }
+    .blt {
+        margin-left: 30%;
+    }
+    #aside {
+        margin-left: -20rem;
+    }
+}
+
+@media only screen and (max-width:1210px) {
+    .que {
+        width: 55%;
+    }
+    .blt {
+        margin-left: 20%;
+    }
+    #aside {
+        margin-left: -27rem;
+    }
+}
+
+@media only screen and (max-width:1096px) {
+    .que {
+        margin-left: 0;
+    }
+    .blt {
+        width: 15%;
+        margin-left: 20%;
+    }
+    #aside {
+        margin-left: -35rem;
+    }
+}
+
+@media only screen and (max-width:942px) {
+    #aside {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:911px) {
+    #aside {
+        display: none;
+    }
+    .filter {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        position: sticky;
+        top: 0px;
+        left: 42rem;
+        bottom: 20px;
+    }
+    .que {
+        margin-left: 5rem;
+    }
+    .blt {
+        width: 15%;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width:763px) {
+    .que {
+        width: 45%;
+    }
+    .filter {
+        cursor: pointer;
+        left: 34rem;
+        bottom: 8px;
+    }
+    .que button {
+        right: 2rem;
+    }
+}
+
+@media only screen and (max-width:635px) {
+    .que {
+        margin-left: 1px;
+        width: 51%;
+    }
+    .blt {
+        margin-left: 16%;
+    }
+    .filter {
+        cursor: pointer;
+        left: 34rem;
+        bottom: 32px;
+    }
+    .que button {
+        float: none;
+        bottom: 4px;
+        margin-top: 13px;
+        left: -13px;
+        width: 35rem;
+    }
+    .que h4, .que p {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:617px) {
+    .que {
+        width: 45%
+    }
+    .filter {
+        cursor: pointer;
+        left: 28rem;
+        bottom: 32px;
+    }
+    .que button {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width:539px) {
+    .que {
+        width: 40%
+    }
+    .filter {
+        cursor: pointer;
+        left: 25rem;
+        bottom: 35px;
+    }
+    .que button {
+        width: 28rem;
+    }
+    .blt {
+        margin-left: 13%;
+    }
+}

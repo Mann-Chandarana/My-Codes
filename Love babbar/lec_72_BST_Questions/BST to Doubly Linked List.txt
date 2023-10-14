@@ -1,0 +1,29 @@
+Steps:
+
+Question given on GFG
+
+- Convert right subtree to Doubly linked list (Using rec)
+- root->left = head of right sub tree that is converted ionto doubly ll
+- left->right_subtree_head = root
+
+- head = root
+
+- Convert left sub tree into LL (Using rec)
+- return head
+
+void convertToDLL(TreeNode *root, TreeNode *head)
+{
+    if(!root)
+        return;
+
+    convertToDLL(root->right, head);
+
+    root->right = head;
+    if(head)
+        head->left = root;
+    
+    head = root;
+
+    convertToDLL(root->left, head);
+
+}

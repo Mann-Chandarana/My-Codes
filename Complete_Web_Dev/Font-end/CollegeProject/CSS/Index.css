@@ -1,0 +1,177 @@
+/* Navbar Section */
+
+.burger {
+    display: flex;
+}
+
+.bur {
+    display: none;
+}
+
+/* @media only screen and (max-width:1500px) {
+    .bur {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 25px;
+        height: 20px;
+    }
+    .bur:hover
+    {
+        
+    }
+    .burger {
+        display: none;
+    }
+    
+} */
+
+.burger-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 1200px;
+}
+/* Background image  */
+#Home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 58rem;
+    width: 100%;
+    /* background-color: black; */
+    background: url('../Images/W3')no-repeat center center/cover;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+/* vertical line  */
+.vl {
+    top: 0;
+    border-left: 6px solid white;
+    height: 50px;
+    margin-left: 17px;
+}
+/* navbar  */
+#navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    display: flex;
+    background-color: rgb(12 12 12);
+    opacity: 0.8;
+    height: 82px;
+}
+
+.nav {
+    margin-top: 13px;
+}
+
+.nav li {
+    margin: 13px 12px;
+}
+
+.font {
+    padding: 10px 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.fill {
+    align-items: center;
+    margin-left: 23rem;
+    margin-right: 1rem;
+}
+
+input {
+    height: 40px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    margin-left: 1rem;
+    background-color: rgb(56, 131, 243);
+    border-radius: 2px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    margin-top: 7px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.ho:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.tbtn {
+    color: white;
+    width: 50px;
+}
+
+.tbtn:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.jbtn {
+    color: white;
+    width: 50px;
+}
+
+.jbtn:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+/* section-Heading */
+
+.big_Heading {
+    font-family: "Montserrat-Black";
+    text-align: center;
+    margin-top: 110px;
+    font-size: 3.5rem;
+    margin-bottom: 150px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* section card */
+
+.set a {
+    margin-left: 25px;
+    color: black;
+    margin-top: 25px;
+}
+
+.comp {
+    display: flex;
+    justify-content: center;
+}
+
+cbtn {
+    text-decoration: none;
+    color: black;
+}
+
+/* footer  */
+.footer {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}

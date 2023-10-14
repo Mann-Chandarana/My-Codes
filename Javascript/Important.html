@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+</body>
+<script>
+    let mainFunc = async () => 
+    {
+        let p = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({
+                    name:"Mann",
+                    id:"20CS011"
+                });
+            }, 2000);
+        })
+        return p;
+    }
+
+    /*func1 and func2 works same*/
+
+    async function func1() {
+        let res = await mainFunc()
+        console.log(res)
+    }
+
+    function func2() {
+        let res = mainFunc()
+        res.then((obj)=>{
+            console.log(obj)
+        })
+    }
+
+    func1();
+    func2();
+</script>
+
+</html>

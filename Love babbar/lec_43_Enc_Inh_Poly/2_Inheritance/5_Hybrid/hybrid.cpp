@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class A
+{
+};
+
+class D
+{
+};
+
+class B : public A
+{
+};
+
+class C : public A, public D
+{
+};
+
+int main()
+{
+
+    return 0;
+}
