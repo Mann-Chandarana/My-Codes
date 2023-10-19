@@ -1,3 +1,7 @@
+/* C. Perfect Square  */
+
+/* https://codeforces.com/contest/1881/problem/C */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
