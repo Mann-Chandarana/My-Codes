@@ -39,8 +39,6 @@ int main()
 
     priority_queue<pll, vector<pll>, greater<pll>> pq;
 
-    vector<ll> visited(n + 1, false);
-
     distance[1] = 0;
     pq.push({0, 1});
 
@@ -50,10 +48,8 @@ int main()
         ll v = pq.top().second;
         pq.pop();
 
-        if (visited[v])
+        if (distance[v] < dist)
             continue;
-
-        visited[v] = true;
 
         for (auto neigh : adj[v])
         {
