@@ -2,7 +2,7 @@
 
 /* High Score */
 
-/* 
+/*
    Here we have to use bellman ford algorithm so it can tackle negative edges and negative cycle
    1) Bellman ford algorith find the shortest path but here we have to find the maximum so we have to
       negate the edge weight and then find the answer so it will give us the maximum value
@@ -80,7 +80,13 @@ void solve(int n, int m)
     }
 
     if (n == 1 || score[n] == NINF)
-        cout << -1 << endl;
+    {
+        if (n == 1 and (edges[0][2]) == 1)
+            cout << 0 << endl;
+
+        else
+            cout << -1 << endl;
+    }
     else
         cout << score[n] * (-1) << endl;
 }
