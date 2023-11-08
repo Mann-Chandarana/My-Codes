@@ -1,0 +1,2 @@
+In question number 16 we have learned the concept of purning in which we will remove all the unnecessary edges
+that are connected to 1
