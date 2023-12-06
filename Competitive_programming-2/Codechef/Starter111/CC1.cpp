@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<int> vi;
+typedef vector<long long> vll;
 typedef pair<int, int> pi;
 typedef vector<pair<int, int>> vpii;
 
@@ -10,26 +10,35 @@ typedef vector<pair<int, int>> vpii;
 #define pb push_back
 #define fastread() (ios_base::sync_with_stdio(false), cin.tie(NULL))
 
+int mod = 1e9 + 7;
+
 void solve()
 {
-    int n;
+    ll n;
     cin >> n;
 
-    int mini = INT_MAX, maxi = INT_MIN;
+    string str;
+    cin >> str;
 
-    while (n--)
+    vll freq(26, 0);
+
+    for (ll i = 0; i < n; i++)
+        freq[str[i] - 'a']++;
+
+    ll answer = 1;
+
+    for (ll i = 0; i < 26; i++)
     {
-        int a, b;
-        cin >> a >> b;
-
-        mini = min(mini, b);
-        maxi = max(maxi, a);
+        if (freq[i] != 0)
+            answer = (answer * (freq[i] + 1)) % mod;
     }
-    cout << maxi - mini << endl;
+    cout << (answer - 1 + mod) % mod << endl;
 }
 
 int main()
 {
+    fastread();
+
     int t;
     cin >> t;
 
