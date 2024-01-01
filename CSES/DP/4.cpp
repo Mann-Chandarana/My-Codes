@@ -66,6 +66,32 @@ int solve(int x, int n, vi &coins, vector<vector<int>> &dp)
     return dp[0][x];
 }
 
+/*** Space Optimization ***/
+
+int solve(int x, int n, vi &coins)
+{
+    vector<int> next(x + 1, 0);
+    vector<int> curr(x + 1, 0);
+
+    for (int index = n - 1; index >= 0; index--)
+    {
+        for (int sum = 1; sum <= x; sum++)
+        {
+            curr[0] = 1;
+            ll picking = 0, not_picking = 0;
+
+            if (sum >= coins[index])
+                picking = curr[sum - coins[index]] % mod;
+
+            not_picking = next[sum] % mod;
+
+            curr[sum] = (picking + not_picking) % mod;
+        }
+        next = curr;
+    }
+    return curr[x];
+}
+
 int main()
 {
     fastread();
@@ -79,7 +105,7 @@ int main()
     for (auto &i : coins)
         cin >> i;
 
-    cout << solve(x, n, coins, dp) << endl;
+    cout << solve(x, n, coins) << endl;
 
     return 0;
 }
