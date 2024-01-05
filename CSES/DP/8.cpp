@@ -53,50 +53,46 @@ int solve(int index, int prev, int n, vi &num, int bound, vector<vector<int>> &d
 
 /** Tabulation **/
 
-int solve1(int n, vi &num, int bound)
+bool valid(int x, int m)
 {
-    vector<vector<int>> dp(n + 1, vector<int>(bound + 2, 0));
+    return x >= 1 and x <= m;
+}
 
-    for (int i = 0; i <= bound; i++)
-        dp[0][i] = 1;
+int solve1(int n, int m, vi &nums)
+{
+    vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
 
-    for (int index = 1; index <= n; index++)
+    for (int i = 1; i <= m; i++)
     {
-        for (int prev = bound - 1; prev >= -1; prev--)
-        {
-            int answer = 0;
+        if (nums[0] == i || nums[0] == 0)
+            dp[0][i] = 1;
+    }
 
-            if (num[index] == 0)
+    for (int index = 1; index < n; index++)
+    {
+        for (int k = 1; k <= m; k++)
+        {
+            if (nums[index] != 0 and nums[index] != k)
+                continue;
+
+            for (int prev = k - 1; prev <= k + 1; prev++)
             {
-                if (index == n - 1)
-                {
-                    for (int i = 1; i <= bound; i++)
-                        answer = (answer + dp[index - 1][i]) % mod;
-                }
-                else
-                {
-                    for (int i = -1; i <= 1; i++)
-                    {
-                        if (prev + i > 0 and prev + i <= bound)
-                            answer = (answer + dp[index - 1][prev + i]) % mod;
-                    }
-                }
+                if (valid(prev, m))
+                    dp[index][k] = (dp[index][k] + dp[index - 1][prev]) % mod;
             }
-            else
-            {
-                if (prev == -1 or abs(prev - num[index]) <= 1)
-                    answer = dp[index - 1][num[index]] % mod;
-            }
-            dp[index][prev + 1] = answer;
         }
     }
-    return dp[n][0];
+    int ans = 0;
+    for (int i = 1; i <= m; i++)
+        ans = (ans + dp[n - 1][i]) % mod;
+
+    return ans;
 }
 
 int main()
 {
     fastread();
-    
+
     int n, m;
     cin >> n >> m;
     vi num(n);
